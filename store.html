@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Store</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Silente | Store</title>
+    <meta name="description" content="This is description" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="store.js" async></script>
   </head>
   <body>
     <header class="main-header">
@@ -16,7 +15,6 @@
           <li><a href="about.html">ABOUT</a></li>
         </ul>
       </nav>
-      <hr />
       <h1 class="band-name band-name-large">SILENTE</h1>
     </header>
     <section class="container content-section">
@@ -54,44 +52,61 @@
         </div>
       </div>
     </section>
-    <section class="container content-section">
-      <h2 class="section-header">CART</h2>
 
-      <div class="cart-row">
-        <strong class="cart-item cart-header cart-column">ITEM</strong>
-        <strong class="cart-price cart-header cart-column">PRICE</strong>
-        <strong class="cart-quantity cart-header cart-column">QUANTITY</strong>
-      </div>
-      <div class="cart-items">
-        <div class="cart-row">
-          <div class="cart-item cart-column">
+    <section class="container content-section">
+      <h2 class="section-header">MERCH</h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">T-Shirt</span>
+          <div>
             <img
-              class="cart-item-image"
-              src="Images/album1.jpg"
-              alt="item in chart"
-              width="100"
-              height="100"
+              class="shop-item-image"
+              src="Images/t-shirt.jpg"
+              height="250"
+              width="250"
             />
-            <span class="cart-item-title">Album 1</span>
           </div>
-          <span class="cart-price cart-column">$13.99</span>
-          <div class="cart-quantity cart-column">
-            <input class="cart-quantity-input" type="number" value="1" />
-            <button class="btn btn-danger btn-quantity-button" role="button">
-              REMOVE
+          <div>
+            <span class="shop-item-price">$19.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CHART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Coffe Cup</span>
+          <div>
+            <img
+              class="shop-item-image"
+              src="Images/coffe_cup.png"
+              height="250"
+              width="250"
+            />
+          </div>
+          <div>
+            <span class="shop-item-price">$6.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CHART
             </button>
           </div>
         </div>
       </div>
+    </section>
+    <section class="container content-section">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items"></div>
       <div class="cart-total">
-        <strong class="cart-total-title">Total</strong>
-        <span class="cart-total-price">$13.99</span>
+        <strong class="cart-total-title"> Total</strong>
+        <span class="cart-total-price">$0</span>
       </div>
-      <div>
-        <button class="btn btn-primary btn-purchase" role="button">
-          PURCHASE
-        </button>
-      </div>
+      <button class="btn btn-primary btn-purchase" role="button">
+        PURCHASE
+      </button>
     </section>
 
     <footer class="main-footer">
